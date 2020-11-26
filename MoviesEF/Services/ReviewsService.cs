@@ -48,6 +48,25 @@ namespace MoviesEF.Services
                 throw exc;
             }
         }
+        public ReviewModel Details(int id)
+        {
+            try
+            {
+                Review review = db.Reviews.Find(id);
+                ReviewModel reviewModel = new ReviewModel()
+                {
+                    Id = review.Id,
+                    Content = review.Content,
+                    Rating = review.Rating,
+                    Movie = review.Movie
+                };
+                return reviewModel;
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
+        }
 
     }
 }

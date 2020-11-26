@@ -44,14 +44,14 @@
             this.dgvMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMovies.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMovies.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvMovies.Location = new System.Drawing.Point(0, 40);
+            this.dgvMovies.Location = new System.Drawing.Point(0, 48);
             this.dgvMovies.MultiSelect = false;
             this.dgvMovies.Name = "dgvMovies";
             this.dgvMovies.ReadOnly = true;
             this.dgvMovies.RowHeadersWidth = 82;
             this.dgvMovies.RowTemplate.Height = 33;
             this.dgvMovies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMovies.Size = new System.Drawing.Size(1362, 822);
+            this.dgvMovies.Size = new System.Drawing.Size(1362, 814);
             this.dgvMovies.TabIndex = 0;
             // 
             // menuStrip1
@@ -63,21 +63,21 @@
             this.deleteMovieToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1362, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1362, 48);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(149, 38);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(149, 40);
             this.editToolStripMenuItem.Text = "Edit Movie";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // deleteMovieToolStripMenuItem
             // 
             this.deleteMovieToolStripMenuItem.Name = "deleteMovieToolStripMenuItem";
-            this.deleteMovieToolStripMenuItem.Size = new System.Drawing.Size(179, 38);
+            this.deleteMovieToolStripMenuItem.Size = new System.Drawing.Size(179, 40);
             this.deleteMovieToolStripMenuItem.Text = "Delete Movie";
             this.deleteMovieToolStripMenuItem.Click += new System.EventHandler(this.deleteMovieToolStripMenuItem_Click);
             // 

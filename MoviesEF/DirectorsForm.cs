@@ -67,7 +67,6 @@ namespace MoviesEF
             DirectorEditForm form = new DirectorEditForm();
             form.lId.Text = id;
             form.Show();
-
         }
     }
 }

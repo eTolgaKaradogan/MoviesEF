@@ -57,7 +57,7 @@ namespace MoviesEF
                     return;
                 }
                 //var directorModel = db.Directors.SingleOrDefault(d => d.Id == Convert.ToInt32(lId.Text));
-                DirectorModel directorModel = directorService.Details(Convert.ToInt32(lId.Text));
+                var directorModel = directorService.Details(Convert.ToInt32(lId.Text));
                 directorModel.Name = tbName.Text.Trim();
                 directorModel.Surname = tbSurname.Text.Trim();
                 if (rbYes.Checked)

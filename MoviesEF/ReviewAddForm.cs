@@ -46,6 +46,7 @@ namespace MoviesEF
         {
             cbMovie.DataSource = movieService.List();
             cbMovie.DisplayMember = "Name";
+            cbMovie.ValueMember = "Id";
         }
 
         private void bSave_Click(object sender, EventArgs e)
@@ -60,7 +61,6 @@ namespace MoviesEF
                 ReviewModel addReviewModel = new ReviewModel();
                 addReviewModel.Content = tbContent.Text;
                 addReviewModel.Rating = Convert.ToInt32(cbRating.SelectedItem);
-                var selectedReview = cbMovie.SelectedItem as ReviewModel;
                 addReviewModel.Movie = (Movie)cbMovie.SelectedItem;
                 reviewsService.Add(addReviewModel);
                 MessageBox.Show("Review added!");
